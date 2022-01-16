@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #151515;
+    color: #fff;
+}
+
+/* DEMARCAÇÃO 
+
+.row{
+    border: 2px solid red;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    border: 2px solid blue;
+}
+
+*/
+
+/* NAVBAR */
+
+nav{
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 20px;
+}
+
+nav .col-4 b, span{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+nav .col-4 span{
+    color: #00ffff;
+}
+
+nav .col-1 .btn{
+    background: #00ffff;
+    transform: translate(0, 20%);
+}
+
+nav .col-1 .btn i{
+    color: #000;
+}
+
+nav .offcanvas-header,.offcanvas-body{
+    background-color: #173838;
+    color: #fff;
+}
+
+/* HOME */
+
+#home-section{
+    width: auto;
+}
+
+#home{
+    height: 100px;
+}
+
+#home .col-6 a{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #00ffff;
+}
+
+#home .col-6 p{
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#home-2{
+    height: 50px;
+}
+
+#home-2 p{
+    text-align: center;
+    font-size: 20px;
+    border-right: 2px rgb(46, 40, 40) solid;
+    border-left: 2px rgb(46, 40, 40) solid;
+}
+
+#button-home{
+    cursor: pointer;
+    border: 3px rgb(46, 40, 40) solid;
+    transition: all 0.3s ease;
+}
+
+#button-home a{
+    text-decoration: none;
+    color: white;
+}
+
+#button-home:hover{
+    border: 3px #00ffff solid;
+}
+
+#home-button p{
+    height: 16px;
+    text-decoration: none;
+    text-align: center;
+    transform: translate(0, 40%);
+    font-size: 15px;
+}
+
+#social-buttons .col-2 i{
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 12px;
+    transition: all 0.4s ease;
+}
+
+#social-buttons .col-2 i:hover{
+    color: #00ffff;
+}
+
+/* SOBRE */
+
+#about-section{
+    width: auto;
+}
+
+#about{
+    padding-top: 50px;
+    height: 650px;
+    justify-content: end;
+    background: #fff;
+    color: black;
+}
+
+#about .row .col-2 h1{
+    color: #03d6d6;
+    text-align: center;
+}
+
+#about .row .col-2 h6{
+    text-align: center;
+}
+
+#about .row .col-3 img{
+    width: 400px;
+    height: 400px;
+    border: 4px solid #03d6d6;
+    border-radius: 8px;
+}
+
+#about .row .col-6 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about .row .col-6 a{
+    background: #028888;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+#about .row .col-6 a:hover{
+    background: #025353;
+}
+
+/* SERVIÇOS */
+
+#services-section{
+    height: 600px;
+    width: auto;
+}
+
+#services{
+    margin-bottom: 10px;
+    padding-top: 50px;
+    height: 350px;
+    justify-content: end;
+}
+
+#services .row .col-2 h1{
+    text-align: center;
+    color: #00ffff;
+}
+
+#services .row .col-2 h6{
+    text-align: center;
+}
+
+#services .content-fluid{
+    height: 350px;
+}
+
+#services .row .col-3{
+    cursor: pointer;
+    background: rgb(46, 40, 40);
+    border: 3px #00ffff solid;
+    transition: all 0.4s ease;
+}
+
+#services .row .col-3 h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+#services .row .col-3 h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+#services .row .col-3 p{
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#services .row .col-3:hover{
+    border: 3px solid #fff;
+    color: #00ffff;
+}
+
+/* TECNOLOGIAS */
+
+#tech-section{
+    padding-top: 50px;
+    background-color: #fff;
+    color: black;
+    height: 650px;
+    width: auto;
+}
+
+#tech .row .col-2 h3{
+    color: #03d6d6;
+    text-align: center;
+}
+
+#tech .row .col-2 h6{
+    text-align: center;
+}
+
+#tech-icons .row .col-2{
+    font-size: 90px;
+    background:rgb(46, 40, 40);
+    color: #fff;
+    border: 3px solid #00ffff;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+#tech-icons .row .col-2 p{
+    text-align: center;
+    transform: translate(0, 18%);
+    cursor: pointer;
+}
+
+#tech-icons .row .col-2 .bootstrap-icon{
+    text-align: center;
+    transform: translate(0, 9%);
+    cursor: pointer;
+}
+
+#tech-icons .row .col-2:hover{
+    border: 3px solid #000;
+    color: #00ffff;
+}
+
+/* CONTATO */
+
+#contact-section{
+    height: 690px;
+    padding-top: 50px;
+}
+
+#contact .row .col-2 h1{
+    text-align: center;
+    color: #00ffff;
+}
+
+#texto-contato{
+    transform: translate(0, 40%);
+}
+
+#texto-contato h5{
+    color: #028888;
+}
+
+#contact .row .col-4{
+    height: 430px;
+}
+
+#contact .row .col-4 h5{
+    color: #028888;
+}
+
+#contact .row .col-4 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact .row .col-2 h6{
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+#formulario fieldset{
+    border: 1px solid #00ffff;
+}
+
+#forms h5{
+    text-align: center;
+}
+
+#formulario legend{
+    text-align: center;
+    padding: 6px;
+    background: #00ffff;
+    color: black;
+}
+
+#formulario input{
+    margin-left: 20px;
+    outline: none;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #00ffff;
+    color: #fff;
+    width: 90%;
+}
+
+#formulario p{
+    margin-left: 20px;
+    transform: translate(0, 35%);
+}
+
+#forms-btn .col-5{
+    text-align: center;
+}
+
+#forms-btn .col-5 .reset{
+    background: darkred;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 10px;
+    border: 1px solid #fff
+}
+
+#forms-btn .col-5 .submit{
+    background: #028888;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 10px;
+    border: 1px solid #fff
+}
+
+/* FOOTER */
+
+#footer-section{
+    background: white;
+    color: black;
+    height: 70px;
+    text-align: center;
+}
+
+#footer-section .container-fluid .row{
+    height: 70px;
+}
+
+#footer-section .container-fluid .row .col-12 b a{
+    text-decoration: none;
+    color: #028888;
+    transition: all 0.4s ease;
+}
+
+#footer-section .container-fluid .row .col-12 b a:hover{
+    color: #00ffff;
+}
